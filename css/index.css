@@ -161,6 +161,12 @@ p {
   width: 100%;
 }
 .navigation {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  padding: 0 0 10px 0;
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
@@ -174,7 +180,7 @@ p {
 }
 .navigation .menu {
   font-size: 1.6rem;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 }
 .navigation .menu .menu-item {
   text-decoration: none;
@@ -275,6 +281,14 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: white;
   color: black;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 2rem;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
