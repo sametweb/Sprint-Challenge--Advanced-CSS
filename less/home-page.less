@@ -1,17 +1,18 @@
 // Home Content
 
 .home {
-
   .intro {
+    .main-header {
+      .image(100%, 5px);
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -20,9 +21,8 @@
     width: 100%;
 
     img {
-      width: 28%;
+      .image(28%, 20px);
       margin: 20px 2.5%;
-      border-radius: 20px;
       height: 100%;
     }
   }
@@ -58,18 +58,18 @@
       }
 
       .btn {
+        .button(black, white);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
-        width: 100%;
+        .image(100%, 10px);
         height: auto;
-        border-radius: 10px;
       }
     }
   }
-}// home
+} // home

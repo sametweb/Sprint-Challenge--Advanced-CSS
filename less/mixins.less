@@ -4,3 +4,23 @@
   margin: 0 auto;
   width: 100%;
 }
+.image(@width: 100%, @radius: 5px) {
+  border-radius: @radius;
+  width: @width;
+}
+
+.button(@bg, @txt) {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: @bg;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: @txt;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid black;
+  &:hover {
+    background: @color;
+    color: @bg;
+  }
+}
