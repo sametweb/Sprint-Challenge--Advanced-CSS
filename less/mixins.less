@@ -1,1 +1,32 @@
 // Mixins Here
+.desktop-width() {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+.image(@width: 100%, @radius: 5px) {
+  border-radius: @radius;
+  width: @width;
+}
+
+.button(@bg, @txt) {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: @bg;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: @txt;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid black;
+  &:hover {
+    background: @txt;
+    color: @bg;
+  }
+  @media @phone {
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 2rem;
+  }
+}
